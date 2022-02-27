@@ -21,3 +21,9 @@ nav {
 p {
     font-weight: 300;
 }
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
