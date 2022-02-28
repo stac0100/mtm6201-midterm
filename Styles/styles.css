@@ -71,7 +71,7 @@ h2{
 
 h3{
     font-size: larger;
-    padding: 20px 10px 15px;
+    padding: 20px 15px 15px;
     font-weight: 400;
     color: #26a682;
 }
@@ -94,6 +94,7 @@ button{
    box-shadow: 5px 5px 20px grey;
 }
 
+/* styling header call to action */
 .headerbutton{
     width: 85%;
     height: auto;
@@ -199,4 +200,114 @@ nav li a{
 .banner span{
     font-size: large;
     font-weight: 400;
+}
+
+.brands img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.brands{
+    text-align: center;
+}
+
+/* adding background images */
+.about{
+     background: 
+     linear-gradient(
+      rgba(38, 166, 130, 0.6), 
+      rgba(38, 166, 130, 0.6)
+    ),
+    /* bottom, image */
+    url("../images/about.jpg");
+    color: #f2f2f2;
+    background-position: center;
+    height: 6em;
+    text-align: center;
+}
+
+.about h1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.services{
+    background: 
+    linear-gradient(
+        rgba(38,166,130,0.6),
+        rgba(38,166,130,0.6)
+    ),
+    url("../images/services.jpg");
+    color: #f2f2f2;
+    background-position: cover;
+    height: 6em;
+    width: auto;
+    text-align: center;
+}
+
+.services h1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*******************************************************************
+                    CONTACT PAGE STYLE
+*******************************************************************/
+.headercontent img{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+/* styling the form */
+.contact{
+    background-color: #26a682;
+    color: #f2f2f2;
+    border-radius: 15px;
+    margin: 5px 1.5em 20px 1.5em;
+}
+
+form{
+    padding: 1em 15px;
+}
+
+form input{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    height: 2em;
+    width: 95%;
+    border-radius: 25px;
+    border: none;
+    padding-left: 1em;
+}
+
+form textarea{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 95%;
+    border-radius: 15px;
+    border: none;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+form input:last-child{
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.location{
+    padding-bottom: 20px;
+}
+.location h3{
+    color: #3c3b3a;
+}
+
+.location span{
+    margin-left: 15px;
+    line-height: 2em;
+    font-weight: 300;
 }
