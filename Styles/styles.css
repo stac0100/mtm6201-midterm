@@ -1,25 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************************************************
+                        DEFAULTS
+*******************************************************************/
+
 body {
     background-color: #f2f2f2;
     font-family: 'Barlow', sans-serif;
+    font-size: medium;
 }
 
+h1{
+    font-size: xx-large;
+    margin: 15px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: x-large;
+    padding: 15px 15px 0 15px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: larger;
+    margin: 15px;
+    font-weight: 400;
+    color: #26a682;
+}
+
+.green{
+    color: #26a682;
+    font-weight: 400;
+}
+/* styling the buttons */
+button{
+   margin: 20px;
+   padding: 10px 20px;
+   background-color: #26a682;
+   color: #f2f2f2;
+   text-align: center;
+   border-radius: 25px;
+   font-weight: 600;
+   font-size: larger;
+   border: none;
+   box-shadow: 5px 5px 20px grey;
+}
+
+.headerbutton{
+    width: 85%;
+    height: auto;
+    font-size: x-large;
+}
 footer {
     background-color: #3c3b3a;
-    color: white;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+footer img{
+    padding: 0 5px;
+    margin-bottom: 15px;
 }
 
 nav {
     background-color: #3c3b3a;
-    color: white;
+    color: #f2f2f2;
 }
 
 .president {
     background-color: #3c3b3a;
-    color: white;
+    color: #f2f2f2;
 }
 
 p {
     font-weight: 300;
+    padding: 15px;
+    line-height: 1.8em;
 }
 
 
@@ -27,3 +131,48 @@ p {
     width: 100%;
     height: auto;
 }
+
+/* making the photo of the president into a circle */
+.clip-me{
+    clip-path: circle(40%);
+}
+
+/*******************************************************************
+                Displaying header activies as grid
+*******************************************************************/
+
+.headeractivities{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.headerbutton{
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.bowling {text-align: center;}
+.rockclimbing {text-align: center;}
+.fitness {text-align: center;}
+.indoor {text-align: center;}
+
+/*******************************************************************
+                    STYLING NAVIGATION
+*******************************************************************/
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+nav li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.logo {text-align: center;}
