@@ -51,30 +51,60 @@ table {
                         DEFAULTS
 *******************************************************************/
 
-body {
+html {
     background-color: #ffff;
     font-family: 'Barlow', sans-serif;
-    font-size: medium;
+    font-size: 18px;
 }
 
 h1{
-    font-size: xx-large;
-    margin: 15px;
+    font-size: 2.2em;
     font-weight: 700;
+    
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h2{
-    font-size: x-large;
-    padding: 15px 15px 0 15px;
+    font-size: 1.7em;
     font-weight: 600;
+   
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.italic h2{
+    font-style: italic;
 }
 
 h3{
-    font-size: larger;
-    padding: 20px 15px 15px;
+    font-size: 1.3em;
     font-weight: 400;
     color: #26a682;
+    margin: 1rem;
 }
+
+p {
+    font-weight: 300;
+    line-height: 1.8em;
+    
+    padding: 0 1rem 1rem;
+}
+
+.thanks{
+    font-size: 3.1em;
+    font-weight: 600;
+    text-align: center;
+    margin: unset;
+    padding: 1rem 1rem 1rem;
+}
+
+.italic{
+    background-color: #f2f2f2;
+}
+
 
 .green{
     color: #26a682;
@@ -100,6 +130,8 @@ button{
     height: auto;
     font-size: x-large;
 }
+
+/* styling the footer */
 footer {
     background-color: #3c3b3a;
     color: #f2f2f2;
@@ -111,32 +143,40 @@ footer img{
     margin-bottom: 15px;
 }
 
-nav {
-    background-color: #3c3b3a;
-    color: #f2f2f2;
-}
 
+/* styling the block of content discussing the president on home page */
 .president {
     background-color: #3c3b3a;
     color: #f2f2f2;
+    
 }
 
-p {
-    font-weight: 300;
-    padding: 5px 15px 20px;
-    line-height: 1.8em;
+.president h2{
+    text-align: center;
 }
 
+.president span{
+    padding-bottom: 1em;
+}
 
-.responsive {
-    width: 100%;
-    height: auto;
+.center {
+   text-align: center;
 }
 
 /* making the photo of the president into a circle */
 .clip-me{
     clip-path: circle(40%);
 }
+
+/* putting a shape under the image to create the perception of a border */
+.fakeborder{
+    clip-path: circle(40%);
+    background-color: #f2f2f2;
+    text-align: center;
+    position: relative;
+}
+
+
 
 /*******************************************************************
                 Displaying header activies as grid
@@ -162,12 +202,17 @@ p {
 /*******************************************************************
                     STYLING NAVIGATION
 *******************************************************************/
+nav {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+}
 
 nav li{
     list-style-type: none;
     text-align: center;
     margin: 5px;
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 nav li a{
@@ -178,6 +223,9 @@ nav li a{
 
 .logo {text-align: center;}
 
+.current {
+    font-weight: 600;
+}
 /*******************************************************************
                     ABOUT PAGE STYLE
 *******************************************************************/
@@ -307,7 +355,7 @@ form input:last-child{
 }
 
 .location span{
-    margin-left: 15px;
+    margin-left: 1rem;
     line-height: 2em;
     font-weight: 300;
 }
