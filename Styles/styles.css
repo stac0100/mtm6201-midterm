@@ -127,7 +127,7 @@ button{
 /* styling header call to action */
 .headerbutton{
     width: 85%;
-    height: auto;
+    height: fit-content;
     font-size: x-large;
 }
 
@@ -168,13 +168,7 @@ footer img{
     clip-path: circle(40%);
 }
 
-/* putting a shape under the image to create the perception of a border */
-.fakeborder{
-    clip-path: circle(40%);
-    background-color: #f2f2f2;
-    text-align: center;
-    position: relative;
-}
+
 
 
 
@@ -207,7 +201,7 @@ nav {
     color: #f2f2f2;
 }
 
-nav li{
+nav ul{
     list-style-type: none;
     text-align: center;
     margin: 5px;
@@ -215,10 +209,11 @@ nav li{
     font-size: 18px;
 }
 
-nav li a{
+nav ul a{
     color: #f2f2f2;
     text-decoration: none;
-    margin: 5px;
+    margin: 0.5rem;
+    display: block;
 }
 
 .logo {text-align: center;}
@@ -365,3 +360,34 @@ form input:last-child{
 *******************************************************************/
 
 /* these are the last elements of the css */
+
+@media screen and (min-width:719px){
+    /* setting the font size for the tablet version */
+    html{ font-size: 1.4rem;}
+    h1{ font-size: 4rem;}
+    h2{ font-size: 2.2rem;}
+    h2 .thanks{ font-size: 3.1rem;}
+    h3{ font-size: 1.7rem;}
+
+    /* styling the navigation using flex to make all the elements sit next to each other */
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    nav ul li{
+        margin-right: 1rem;
+    }
+
+    /* pushing the logo to the left using margin auto */
+    .logo{
+        margin-right: auto;
+        margin-left: 2rem;
+    }  
+}
