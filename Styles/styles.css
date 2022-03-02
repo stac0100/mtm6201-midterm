@@ -182,13 +182,7 @@ footer img{
 .activities{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.headerbutton{
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-template-rows: 1fr 1fr;
 }
 
 .bowling {text-align: center;}
@@ -423,12 +417,6 @@ form input:last-child{
         grid-template-rows: 1fr;
     }
 
-    /* making the button sit in the center of the activities and changing width */
-    .headerbutton{
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
     .responsive{
         width: 50%;
         margin-top: 1rem;
@@ -439,6 +427,7 @@ form input:last-child{
     .president{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     .center h2{
@@ -544,6 +533,7 @@ form input:last-child{
     /*************************************
                 HOME
     *************************************/
+    /* using grid to make the header contents sit next to each other */
     .desktop{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -553,6 +543,8 @@ form input:last-child{
         grid-row-start: 2;
     }
 
+    /* hiding the header image in desktop so i can use background image
+        it looks better  */
     .responsive{
         display: none;
     }
@@ -564,5 +556,118 @@ form input:last-child{
         background-repeat: no-repeat;
         margin-top: 2rem;
         margin-right: 2rem;
+    }
+
+    /* styling the discover Algonquin section with grid  */
+    .discoverAlgonquin{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #f2f2f2;
+    }
+
+    .discoverback{
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* styling the main banner of the president with flex so the elements sit next to each other */
+    .president{
+        display: flex;
+        align-content: space-between;
+    }
+
+    .president .center{
+        display: flex;
+        align-content: space-between;
+    }
+
+    .president .center img{
+        margin-left: 2rem;
+    }
+
+    .president .center h2{
+        margin-top: 3rem;
+    }
+
+    .president div p{
+        margin-top: 1rem;
+    }
+
+    /* styling the discover entertainment section using grid */
+    .discoverEntertainment{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .discoverEback{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /*************************************
+                    ABOUT
+    *************************************/    
+    .header-about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-about .construction{
+        display: none;
+    }
+
+    .header-about .center{
+        background-image: url("../images/construction.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* styling the about section with grid so there are 3 columns */
+    .italic{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    /* displaying brands section as grid so they sit next to each other in a 4 column layout */
+    .brands{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /*************************************
+                CONTACT
+    *************************************/ 
+    /* using grid to display header so that there are two columns */
+    .header-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+
+    .contact{
+        margin-top: 2rem;
+    }
+
+    /* using grid to display location section so that there are two columns */
+    .location-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map{
+        margin-top: 6rem;
+        padding-left: 0.5rem;
+        margin-right: 2rem;
+
     }
 }
