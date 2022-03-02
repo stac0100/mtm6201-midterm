@@ -61,7 +61,7 @@ h1{
     font-size: 2.2em;
     font-weight: 700;
     
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
     padding-top: 1rem;
 }
@@ -70,8 +70,8 @@ h2{
     font-size: 1.7em;
     font-weight: 600;
    
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
     padding-top: 1rem;
 }
 
@@ -83,14 +83,17 @@ h3{
     font-size: 1.3em;
     font-weight: 400;
     color: #26a682;
-    margin: 1rem;
+    
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
 }
 
 p {
     font-weight: 300;
     line-height: 1.8em;
     
-    padding: 0 1rem 1rem;
+    padding: 0 2rem 2rem;
 }
 
 .thanks{
@@ -98,13 +101,12 @@ p {
     font-weight: 600;
     text-align: center;
     margin: unset;
-    padding: 1rem 1rem 1rem;
+    padding: 1rem 2rem 1rem;
 }
 
 .italic{
     background-color: #f2f2f2;
 }
-
 
 .green{
     color: #26a682;
@@ -112,8 +114,9 @@ p {
 }
 /* styling the buttons */
 button{
-   margin: 20px;
-   padding: 10px 20px;
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+   padding: 0.5rem 2rem;
    background-color: #26a682;
    color: #f2f2f2;
    text-align: center;
@@ -138,11 +141,15 @@ footer {
     text-align: center;
 }
 
+footer h2{
+    text-align: center;
+    margin: unset;
+}
+
 footer img{
     padding: 0 5px;
     margin-bottom: 15px;
 }
-
 
 /* styling the block of content discussing the president on home page */
 .president {
@@ -168,15 +175,11 @@ footer img{
     clip-path: circle(40%);
 }
 
-
-
-
-
 /*******************************************************************
                 Displaying header activies as grid
 *******************************************************************/
 
-.headeractivities{
+.activities{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -238,6 +241,8 @@ nav ul a{
 
 .banner button {
     box-shadow: none;
+    margin: unset;
+    margin: 1rem;
 }
 
 .banner span{
@@ -293,12 +298,25 @@ nav ul a{
     padding-bottom: 1em;
 }
 
+/* hiding images from the mobile version */
+.bar{
+    display: none;
+}
+.competitive{
+    display: none;
+}
+.new{
+    display: none;
+}
+.climbing{
+    display: none;
+}
 /*******************************************************************
                     CONTACT PAGE STYLE
 *******************************************************************/
 .headercontent img{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 /* styling the form */
@@ -306,7 +324,7 @@ nav ul a{
     background-color: #26a682;
     color: #f2f2f2;
     border-radius: 15px;
-    margin: 5px 1.5em 20px 1.5em;
+    margin: 0 2rem 2rem 2rem;
 }
 
 form{
@@ -343,14 +361,14 @@ form input:last-child{
 }
 
 .location{
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 .location h3{
     color: #3c3b3a;
 }
 
 .location span{
-    margin-left: 1rem;
+    margin-left: 2rem;
     line-height: 2em;
     font-weight: 300;
 }
@@ -368,6 +386,10 @@ form input:last-child{
     h2{ font-size: 2.2rem;}
     h2 .thanks{ font-size: 3.1rem;}
     h3{ font-size: 1.7rem;}
+
+    /*************************************
+                NAVIGATION
+    *************************************/
 
     /* styling the navigation using flex to make all the elements sit next to each other */
     nav{
@@ -390,4 +412,157 @@ form input:last-child{
         margin-right: auto;
         margin-left: 2rem;
     }  
+
+    /*************************************
+                    MAIN
+    *************************************/
+    /* styling the grid so all the header activities sit next to each other */
+    .activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* making the button sit in the center of the activities and changing width */
+    .headerbutton{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .responsive{
+        width: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* styling the section about the president using grid */
+    .president{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .center h2{
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding-top: 0.5rem;
+    }
+
+    .president div p{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    /*************************************
+                    ABOUT
+    *************************************/
+    .construction{
+        padding-bottom: 1rem;
+    }
+
+    .about h1{
+        padding: unset;
+        padding-top: 0.5rem;
+    }
+
+    .services h1{
+        padding: unset;
+        padding-top: 0.5rem;
+    }
+
+    footer h2{
+        font-size: 1.3rem;
+        margin-bottom: unset;
+    }
+
+    /* displaying images on tablet version */
+    .bar{
+        display: block;
+        background-image: url(../images/sizes/bar_960.png);
+        margin: 2rem 0 2rem 2rem;
+       
+    }
+
+    .competitive{
+        display: block;
+        background-image: url(../images/sizes/bowling_720.png);
+        margin: 2rem 2rem 2rem 0;
+        background-position: center bottom;
+    }
+
+    .new{
+        display: block;
+        background-image: url(../images/sizes/fitness_960.png);
+        margin: 2rem 0 2rem 2rem;
+        background-position: center center;
+    }
+
+    .climbing{
+        display: block;
+        background-image: url(../images/sizes/climbing_720.png);
+        margin: 2rem 2rem 2rem 0;
+        background-position: center center;
+    }
+
+    /* styling content with grid so the images sit next to the text */
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* styling news letter banner */
+    .banner{
+        padding: unset;
+    }
+    .banner span{
+        font-size: 1.3rem;
+    }
+
+    /*************************************
+                CONTACT
+    *************************************/
+    form input{
+        height: 3em;
+        font-size: 1rem;
+    }
+    form textarea{
+        height: 8em;
+        font-size: 1rem;
+    }
+    form input:last-child{
+        width: 25%;
+        height: 2em;
+        justify-content: center;
+    }
+
+    .headercontent img{
+        width: 60%;
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (min-width:1440px){
+    /*************************************
+                HOME
+    *************************************/
+    .desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .headeractivities{
+        grid-row-start: 2;
+    }
+
+    .responsive{
+        display: none;
+    }
+    .headerback{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url("../images/discover.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
 }
