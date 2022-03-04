@@ -91,7 +91,7 @@ h3{
 
 p {
     font-weight: 300;
-    line-height: 1.8em;
+    line-height: 2em;
     
     padding: 0 2rem 2rem;
 }
@@ -112,9 +112,13 @@ p {
     color: #26a682;
     font-weight: 400;
 }
-/* styling the buttons */
-button{
+/************************************
+            BUTTONS
+************************************/
+.learn-more{
+    float: right;
    margin-left: 2rem;
+   margin-right: 1rem;
    margin-bottom: 2rem;
    padding: 0.5rem 2rem;
    background-color: #26a682;
@@ -127,14 +131,36 @@ button{
    box-shadow: 5px 5px 20px grey;
 }
 
+/* using clearfix on the divs containing learn more buttons so that the div 
+recognizes the height of the button */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /* styling header call to action */
 .headerbutton{
     width: 85%;
+    margin-left: 1.5rem;
     height: fit-content;
     font-size: x-large;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #26a682;
+    color: #f2f2f2;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: larger;
+    border: none;
+    box-shadow: 5px 5px 20px grey;
 }
-
-/* styling the footer */
+.banner .learn-more{
+    float: unset;
+}
+/************************************
+            FOOTER
+************************************/
 footer {
     background-color: #3c3b3a;
     color: #f2f2f2;
@@ -150,7 +176,9 @@ footer img{
     padding: 0 5px;
     margin-bottom: 15px;
 }
-
+/************************************
+        HOME - PRESIDENT
+************************************/
 /* styling the block of content discussing the president on home page */
 .president {
     background-color: #3c3b3a;
@@ -159,7 +187,10 @@ footer img{
 }
 
 .president h2{
-    text-align: center;
+    margin: unset;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
 .president span{
@@ -176,9 +207,9 @@ footer img{
 }
 
 /*******************************************************************
-                Displaying header activies as grid
+                            HOME - HEADER
 *******************************************************************/
-
+/* styling header activities using grid so there are two columns and two rows */
 .activities{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,6 +221,13 @@ footer img{
 .fitness {text-align: center;}
 .indoor {text-align: center;}
 
+/* styling header image */
+.responsive{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
 /*******************************************************************
                     STYLING NAVIGATION
 *******************************************************************/
@@ -202,15 +240,19 @@ nav ul{
     list-style-type: none;
     text-align: center;
     margin: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
     font-size: 18px;
 }
 
 nav ul a{
     color: #f2f2f2;
     text-decoration: none;
-    margin: 0.5rem;
+    margin: 1em;
     display: block;
+}
+
+nav ul a:first-child{
+    margin-top: unset;
 }
 
 .logo {text-align: center;}
@@ -395,6 +437,7 @@ form input:last-child{
     nav ul {
         display: flex;
         margin-right: 2rem;
+        padding-top: 1rem;
     }
 
     nav ul li{
