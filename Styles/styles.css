@@ -350,12 +350,13 @@ nav ul a:first-child{
 /*******************************************************************
                     CONTACT PAGE STYLE
 *******************************************************************/
+
 .headercontent img{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: auto;
+    display: block;
 }
 
-/* styling the form */
+/* styling the contact form */
 .contact{
     background-color: #26a682;
     color: #f2f2f2;
@@ -387,6 +388,7 @@ form textarea{
     padding-top: 0.5em;
 }
 
+/* styling the submit button */
 form input:last-child{
     background-color: #3c3b3a;
     color: #f2f2f2;
@@ -396,6 +398,7 @@ form input:last-child{
     width: 100%;
 }
 
+/* styling the location section */
 .location{
     padding-bottom: 2rem;
 }
@@ -408,6 +411,11 @@ form input:last-child{
     line-height: 2em;
     font-weight: 300;
 }
+
+/*******************************************************************
+                            ANIMATIONS
+*******************************************************************/
+/* adding two animations within the website */
 
 /*******************************************************************
                     MEDIA QUERIES
