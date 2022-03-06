@@ -172,11 +172,41 @@ footer {
 footer h2{
     text-align: center;
     margin: unset;
+    font-size: 1rem;
 }
 
 footer img{
     padding: 0 5px;
     margin-bottom: 15px;
+}
+
+footer span img{
+    width: 15px;
+    padding-top: unset;
+}
+
+/* making the "back to top" icon sit to the right of the footer */
+.back-to-top p{
+    margin: unset;
+    padding: unset;
+    font-size: 12px;
+}
+
+.back-to-top p a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.back-to-top{
+    float: right;
+    margin-right: 1rem;
+    padding-top: 1rem;
+}
+
+.back-to-top img{
+    width: 25px;
+    padding: unset;
+    margin: unset;
 }
 /************************************
         HOME - PRESIDENT
@@ -236,6 +266,11 @@ footer img{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1rem;
+}
+
+/* hiding scroll button on mobile version */
+.scroll{
+    display: none;
 }
 /*******************************************************************
                     STYLING NAVIGATION
@@ -428,7 +463,47 @@ form input:last-child{
                             ANIMATIONS
 *******************************************************************/
 /* adding two animations within the website */
-
+/* adding a hover background transition on learn-more buttons */
+.learn-more{
+    transition-property: background;
+    transition-duration: 1s;
+}
+.learn-more:hover{
+    background-color: #7D70BA;
+}
+/* adding a hover background transition and scale on "get started" button */
+.headerbutton{
+    transition-duration: 1s;
+    transition-property: all;
+}
+.headerbutton:hover{
+    background-color: #7D70BA;
+    transform: scale(1.1);
+}
+/* adding a hover background transtion on form submit button */
+.submit{
+    transition-property: background;
+    transition-duration: 1s;
+}
+.submit:hover{
+    background-color: #7D70BA;
+}
+/* adding hover scale transform on nav li */
+#main li{
+    transition-duration: 1s;
+    transition-property: all;
+}
+#main li:hover{
+    transform: scale(1.2);
+}
+/* adding hover scale transform on social icons */
+footer span img{
+    transition-duration: 1s;
+    transition-property: all;
+}
+footer span img:hover{
+    transform: scale(1.3);
+}
 /*******************************************************************
                     MEDIA QUERIES
 *******************************************************************/
@@ -470,7 +545,19 @@ form input:last-child{
         margin-right: auto;
         margin-left: 2rem;
     }  
+    /*************************************
+                    FOOTER
+    *************************************/
+    .back-to-top img{
+        width: 50px;
+    }
+    .back-to-top a{
+        font-size: 0.8rem;
+    }
 
+    footer span img{
+        width: 25px;
+    }
     /*************************************
                     MAIN
     *************************************/
@@ -487,6 +574,23 @@ form input:last-child{
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+
+    /* making the scroll icon visible and making it sit in the center */
+    .scroll{
+        display: block;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .scroll p{
+        margin: unset;
+        padding: unset;
+    }
+
+    /* rotating the scroll icon so the arrow is facing down */
+    .scroll img{
+        transform: rotate(180deg);
     }
 
     .learn-more{
@@ -626,6 +730,11 @@ form input:last-child{
     .headerbutton{
         margin-left: 2rem;
         width: 50%;
+    }
+
+    .scroll{
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
     /* hiding the header image in desktop so i can use background image
