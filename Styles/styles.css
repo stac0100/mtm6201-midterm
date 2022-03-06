@@ -60,14 +60,12 @@ html {
 h1{
     font-size: 2.2em;
     font-weight: 700;
-    
     margin: 1.5rem;
 }
 
 h2{
     font-size: 1.7em;
     font-weight: 600;
-   
     margin: 0 1.5rem 0.5rem 1.5rem;
     padding-top: 1rem;
 }
@@ -80,9 +78,14 @@ h3{
     font-size: 1.3em;
     font-weight: 400;
     color: #26a682;
-    
     margin: 0 1.5rem 1rem 1.5rem;
     padding-top: 0.5rem;
+}
+
+h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
 p {
@@ -140,8 +143,8 @@ recognizes the height of the button */
 /* styling header call to action */
 .headerbutton{
     width: 90%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     height: fit-content;
     font-size: x-large;
     margin-bottom: 2rem;
@@ -192,10 +195,6 @@ footer img{
     margin-bottom: 1rem;
 }
 
-.president span{
-    padding-bottom: 1em;
-}
-
 .center {
    text-align: center;
 }
@@ -203,6 +202,17 @@ footer img{
 /* using clip-me to make the photo of the president into a circle */
 .clip-me{
     clip-path: circle(40%);
+    
+    top: 3px;
+    left: 3px;
+}
+
+/* using clip-me to create a circle and position to make an overlay */
+.border{
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    clip-path: circle(41%);
 }
 
 /*******************************************************************
@@ -397,6 +407,7 @@ form input:last-child{
     font-weight: 600;
     text-align: center;
     width: 100%;
+    padding-left: unset;
 }
 
 /* styling the location section */
@@ -576,6 +587,7 @@ form input:last-child{
     form{
         margin-left: 2rem;
         margin-right: 2rem;
+
     }
     form input{
         height: 3em;
@@ -586,6 +598,7 @@ form input:last-child{
         font-size: 1rem;
     }
     form input:last-child{
+        float: right;
         width: 25%;
         height: 2em;
         justify-content: center;
@@ -626,8 +639,8 @@ form input:last-child{
         background-image: url("../images/discover.svg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 2rem;
-        margin-right: 2rem;
+        
+        margin: 2rem 2rem 0 3rem;
     }
 
     /* styling the discover Algonquin section with grid  */
@@ -635,6 +648,7 @@ form input:last-child{
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: #f2f2f2;
+        padding: 1rem;
     }
 
     .discoverback{
@@ -645,38 +659,54 @@ form input:last-child{
 
     /* styling the main banner of the president with flex so the elements sit next to each other */
     .president{
-        display: flex;
-        align-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
     }
 
     .president .center{
-        display: flex;
-        align-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .president .center img{
         margin-left: 2rem;
     }
 
-    .president .center h2{
-        margin-top: 3rem;
+    .border{
+        clip-path: none;
+        background-color: #3c3b3a;
     }
 
     .president div p{
-        margin-top: 1rem;
+        padding: unset;
+        margin: unset;
+        padding: 2rem 1rem;
     }
 
+    .president-image{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }    
+
+    .h4{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
     /* styling the discover entertainment section using grid */
     .discoverEntertainment{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
+        padding: 1rem;
     }
 
     .discoverEback{
-        margin-left: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin: 2rem;
+    }
+
+    .discover-content{
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     /*************************************
