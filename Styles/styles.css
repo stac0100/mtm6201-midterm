@@ -247,7 +247,7 @@ footer span img{
     display: inline-block;
     position: relative;
     background-color: white;
-    clip-path: circle(41%);
+    clip-path: circle(37%);
 }
 
 /*******************************************************************
@@ -397,6 +397,10 @@ nav ul a:first-child{
 .climbing{
     display: none;
 }
+
+.center img{
+    width: 80%;
+}
 /*******************************************************************
                     CONTACT PAGE STYLE
 *******************************************************************/
@@ -463,6 +467,9 @@ form input:last-child{
     font-weight: 300;
 }
 
+.headercontent img{
+    width: 80%;
+}
 /*******************************************************************
                             ANIMATIONS
 *******************************************************************/
